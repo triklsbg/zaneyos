@@ -1,5 +1,5 @@
 {
-  description = "ZaneyOS";
+  description = "ZaneyOS modified for trikl on ff1";
 
   inputs = {
     home-manager = {
@@ -12,10 +12,16 @@
   };
 
   outputs = {nixpkgs, ...} @ inputs: let
+    #
+    # system = "x86_64-linux";
+    # host = "zaneyos-23-vm";
+    # profile = "vm";
+    # username = "dwilliams";
+    #
     system = "x86_64-linux";
-    host = "zaneyos-23-vm";
-    profile = "vm";
-    username = "dwilliams";
+    host = "nixos";
+    profile = "nvidia";
+    username = "tom1";
   in {
     nixosConfigurations = {
       amd = nixpkgs.lib.nixosSystem {
