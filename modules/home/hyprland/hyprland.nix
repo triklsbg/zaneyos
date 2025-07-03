@@ -43,6 +43,7 @@ in {
     };
     xwayland = {
       enable = true;
+      # force_zero_scaling = true;   # trikl ?emacs blurry fonts
     };
     settings = {
       exec-once = [
@@ -55,7 +56,7 @@ in {
         "killall -q waybar;sleep .5 && waybar"
         "killall -q swaync;sleep .5 && swaync"
         "nm-applet --indicator"
-        "pypr &"
+        "pypr &               # pypr = hyprland plugin system "
         "sleep 1.5 && swww img ${stylixImage}"
       ];
 
@@ -89,7 +90,7 @@ in {
       };
 
       general = {
-        "$modifier" = "SUPER";
+        "$modifier" = "SUPER";  # START-Key of Logitech MX, maybe caps is super too
         layout = "dwindle";
         gaps_in = 6;
         gaps_out = 8;
@@ -167,8 +168,11 @@ in {
     };
 
     extraConfig = "
-      monitor=,preferred,auto,auto
-      monitor=Virtual-1,1920x1080@60,auto,1
+      # monitor=,preferred,auto,auto  # trikl
+      # auto gives scale of 1.5, display running scale with  hyprctl monitors
+      # genau 1 ergibt brachbares Erscheinungsbild von google-chrome (eher noch kleiner)
+      monitor=,preferred,auto,1   # trikl2 1.75 wird auf 1.6666 gezwungen
+      # monitor=Virtual-1,1920x1080@60,auto,1
       ${extraMonitorSettings}
       # To enable blur on waybar uncomment the line below
       # Thanks to SchotjeChrisman

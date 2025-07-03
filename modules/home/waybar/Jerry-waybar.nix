@@ -158,7 +158,8 @@ in
       style = concatStrings [
         ''
           * {
-            font-size: 16px;
+            /*  font-size: 16px;  */
+            font-size: 32px;
             font-family: JetBrainsMono Nerd Font, Font Awesome, sans-serif;
             font-weight: bold;
           }

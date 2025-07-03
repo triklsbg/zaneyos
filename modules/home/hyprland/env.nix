@@ -19,7 +19,10 @@
         # Also added card2 as a further protection should it be enabled
         # This is mostly needed for hybrid laptops
         #"AQ_DRM_DEVICES,/dev/dri/card0:/dev/dri/card1:/dev/card2"
+        # GDK_SCALE,1   # trikl
         "GDK_SCALE,1"
+        #
+        "GDK_DPI_SCALE,0.5"
         "QT_SCALE_FACTOR,1"
         "EDITOR,nvim"
         # Setting terminal to kitty so running kitty from rofi

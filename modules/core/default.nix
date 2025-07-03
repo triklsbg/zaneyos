@@ -1,7 +1,7 @@
 {inputs, ...}: {
   imports = [
     ./boot.nix
-    ./flatpak.nix
+    # ./flatpak.nix
     ./fonts.nix
     ./greetd.nix
     ./hardware.nix
@@ -13,13 +13,13 @@
     ./security.nix
     ./services.nix
     ./starfish.nix
-    ./steam.nix
+    # ./steam.nix
     ./stylix.nix
     ./syncthing.nix
     ./system.nix
     ./thunar.nix
     ./user.nix
-    ./virtualisation.nix
+    # ./virtualisation.nix
     ./xserver.nix
     inputs.stylix.nixosModules.stylix
   ];

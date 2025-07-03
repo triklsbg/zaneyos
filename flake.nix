@@ -24,16 +24,16 @@
     username = "tom1";
   in {
     nixosConfigurations = {
-      amd = nixpkgs.lib.nixosSystem {
-        inherit system;
-        specialArgs = {
-          inherit inputs;
-          inherit username;
-          inherit host;
-          inherit profile;
-        };
-        modules = [./profiles/amd];
-      };
+      # amd = nixpkgs.lib.nixosSystem {
+      #   inherit system;
+      #   specialArgs = {
+      #     inherit inputs;
+      #     inherit username;
+      #     inherit host;
+      #     inherit profile;
+      #   };
+      #   modules = [./profiles/amd];
+      # };
       nvidia = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = {

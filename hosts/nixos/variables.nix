@@ -6,10 +6,15 @@
   # Hyprland Settings
   # ex "monitor=HDMI-A-1, 1920x1080@60,auto,1"
   #
+  # xrandr gives : HDMI-0, 3840x2160
+  #
+  # official docs say:
+  # monitor = , preferred, auto, 10
+
   # trikl no extra MonitorSettings
-  # extraMonitorSettings = "
-  #   monitor = Virtual-1, 1920x1080@60,auto,1
-  #   ";
+  extraMonitorSettings = "
+    monitor = Virtual-1, 1920x1080@60,auto,1
+    ";
 
   # Waybar Settings
   clock24h = false;
@@ -27,6 +32,7 @@
 
   # Enable NFS
   # enableNFS = true;
+  enableNFS = false;
 
   # Enable Printing Support
   printEnable = true;

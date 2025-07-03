@@ -1,6 +1,8 @@
-{host, ...}: let
+{ host, ... }:
+let
   inherit (import ../../hosts/${host}/variables.nix) waybarChoice;
-in {
+in
+{
   imports = [
     ./amfora.nix
     ./bash.nix
@@ -13,7 +15,7 @@ in {
     ./fastfetch
     ./fzf.nix
     ./gh.nix
-    ./ghostty.nix
+    # ./ghostty.nix
     ./git.nix
     ./gtk.nix
     ./htop.nix
@@ -29,7 +31,7 @@ in {
     ./swappy.nix
     ./swaync.nix
     ./virtmanager.nix
-    ./vscode.nix
+    # ./vscode.nix
     waybarChoice
     ./wezterm.nix
     ./wlogout
@@ -37,5 +39,9 @@ in {
     ./yazi
     ./zoxide.nix
     ./zsh
+  ];
+
+  home.sessionPath = [
+    "$HOME/.config/emacs/bin"
   ];
 }
