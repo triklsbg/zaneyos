@@ -1,6 +1,8 @@
-{host, ...}: let
+{ host, ... }:
+let
   inherit (import ../../hosts/${host}/variables.nix) consoleKeyMap;
-in {
+in
+{
   nix = {
     settings = {
       download-buffer-size = 250000000;
@@ -9,11 +11,11 @@ in {
         "nix-command"
         "flakes"
       ];
-      substituters = ["https://hyprland.cachix.org"];
-      trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
+      substituters = [ "https://hyprland.cachix.org" ];
+      trusted-public-keys = [ "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc=" ];
     };
   };
-  time.timeZone = "Europe/Berlin";    #trikl
+  time.timeZone = "Europe/Berlin"; # trikl
   i18n.defaultLocale = "de_DE.UTF-8";
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "de_DE.UTF-8";
@@ -29,6 +31,17 @@ in {
   environment.variables = {
     ZANEYOS_VERSION = "2.3.1";
     ZANEYOS = "true";
+  };
+  environment.shellAliases = {
+    # trikl: touches all shells ...
+    ll = "ls -l";
+    la = "ls -a";
+    update = "sudo nixos-rebuild switch";
+    gst = "git status";
+    gil = "git log";
+    gbra = "git branch -av";
+    rghl = "rg --hidden --follow ";
+    rghu = "rg --hidden --no-ignore --follow ";
   };
   console.keyMap = "${consoleKeyMap}";
   system.stateVersion = "23.11"; # Do not change!

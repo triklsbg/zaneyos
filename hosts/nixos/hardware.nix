@@ -61,7 +61,7 @@
   };
 
   # main archlinux installation on partition 4
-  fileSystems."/partitions/arch" = {
+  fileSystems."/pp/ff4" = {
     device = "/dev/disk/by-label/ff4_arch";
     fsType = "ext4";
     options = [ "nofail" ];
@@ -79,7 +79,7 @@
   # };
 
   #
-  fileSystems."/partitions/ff9_nixos" = {
+  fileSystems."/pp/ff9_nixos" = {
     device = "/dev/disk/by-label/ff9_nixos";
     fsType = "ext4";
     options = [ "nofail" ];
