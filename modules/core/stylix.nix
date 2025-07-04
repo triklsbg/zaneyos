@@ -33,7 +33,7 @@ in {
       package = pkgs.bibata-cursors;
       name = "Bibata-Modern-Ice";
       # size = 24;
-      size = 30;
+      size = 32;
     };
     fonts = {
       monospace = {

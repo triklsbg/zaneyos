@@ -58,6 +58,11 @@ in {
         "nm-applet --indicator"
         "pypr &               # pypr = hyprland plugin system "
         "sleep 1.5 && swww img ${stylixImage}"
+        "# trikl: autostart 2 kittys on first screen"
+        "[workspace 1 silent] kitty"
+        "[workspace 1 silent] kitty"
+        "[workspace 3 silent] emacs"
+        "[workspace 2 silent] google-chrome-stable"
       ];
 
       input = {
