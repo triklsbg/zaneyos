@@ -77,5 +77,6 @@
     wget # Tool For Fetching Files With Links
     fd
     # ytmdl # Tool For Downloading Audio From YouTube
+    fish
   ];
 }
