@@ -27,7 +27,7 @@
     appimage-run # Needed For AppImage Support
     bottom # btop like util
     google-chrome
-    brave # Brave Browser
+    # brave # Brave Browser
     brightnessctl # For Screen Brightness Control
     cmatrix # Matrix Movie Effect In Terminal
     cowsay # Great Fun Terminal Program
@@ -78,5 +78,6 @@
     fd
     # ytmdl # Tool For Downloading Audio From YouTube
     fish
+    wev     # like xev shows keyboard aka mouse events
   ];
 }

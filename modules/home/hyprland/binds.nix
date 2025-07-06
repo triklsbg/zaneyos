@@ -22,6 +22,7 @@ in {
       "$modifier,O,exec,obs"
       "$modifier,C,exec,hyprpicker -a"
       "$modifier,G,exec,gimp"
+      # T open a pulldown terminal ala yakuake
       "$modifier,T,exec,pypr toggle term"
       "$modifier,M,exec,pavucontrol"
       "$modifier,Q,killactive,"
@@ -39,6 +40,7 @@ in {
       "$modifier SHIFT,l,movewindow,r"
       "$modifier SHIFT,k,movewindow,u"
       "$modifier SHIFT,j,movewindow,d"
+      # $mod ALT
       "$modifier ALT, left, swapwindow,l"
       "$modifier ALT, right, swapwindow,r"
       "$modifier ALT, up, swapwindow,u"
@@ -47,6 +49,7 @@ in {
       "$modifier ALT, 46, swapwindow,r"
       "$modifier ALT, 45, swapwindow,u"
       "$modifier ALT, 44, swapwindow,d"
+      # movefocus
       "$modifier,left,movefocus,l"
       "$modifier,right,movefocus,r"
       "$modifier,up,movefocus,u"
@@ -65,6 +68,7 @@ in {
       "$modifier,8,workspace,8"
       "$modifier,9,workspace,9"
       "$modifier,0,workspace,10"
+      # move_to_workspace
       "$modifier SHIFT,SPACE,movetoworkspace,special"
       "$modifier,SPACE,togglespecialworkspace"
       "$modifier SHIFT,1,movetoworkspace,1"
@@ -95,8 +99,8 @@ in {
     ];
 
     bindm = [
-      "$modifier, mouse:272, movewindow"
-      "$modifier, mouse:273, resizewindow"
+      "$modifier, mouse:272, movewindow       # mouse-left-press ..."
+      "$modifier, mouse:273, resizewindow     # between 2 windos, mouse-right-press and move ..."
     ];
   };
 }

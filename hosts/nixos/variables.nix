@@ -5,9 +5,6 @@
 
   # Hyprland Settings
   # ex "monitor=HDMI-A-1, 1920x1080@60,auto,1"
-  #
-  # xrandr gives : HDMI-0, 3840x2160
-  #
   # official docs say:
   # monitor = , preferred, auto, 10
 

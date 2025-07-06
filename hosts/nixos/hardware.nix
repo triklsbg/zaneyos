@@ -85,6 +85,12 @@
     options = [ "nofail" ];
   };
 
+  fileSystems."/pp/ff11" = {
+    device = "/dev/disk/by-label/ff11_black";
+    fsType = "ext4";
+    options = [ "nofail" ];
+  };
+
   swapDevices = [
     {device = "/dev/disk/by-label/swap";}
   ];

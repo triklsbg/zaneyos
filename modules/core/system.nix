@@ -33,6 +33,8 @@ in
     ZANEYOS = "true";
   };
   environment.shellAliases = {
+    # list all installed packages
+    nixpkgs_me = "nix-store --query --requisites /run/current-system | cut -d- -f2- | sort | uniq ";
     # trikl: touches all shells ...
     ll = "ls -l";
     la = "ls -a";
@@ -40,9 +42,25 @@ in
     gst = "git status";
     gil = "git log";
     gbra = "git branch -av";
+    gif = "git diff";
     rghl = "rg --hidden --follow ";
     rghu = "rg --hidden --no-ignore --follow ";
+    maintain_alias = " in ..core/system.nix ";
+    #
+    # rem_xxx to remember things
+    rem_fish_keybinds = "bind ";
+    rem_zsh_keybinds = "bindkey -L ";
+    rem_bash_keybinds = "bind -p";
   };
+
+  # services.xserver.xkb.extraLayouts = {
+  #   gb-trikl = {
+  #     description = "Englisch mit Umlauten a,u,o ";
+  #     languages = ["eng"];
+  #     symbolsFile = ../../../xkb/gb-trikl.xkb;
+  #   };
+  # };
+
   console.keyMap = "${consoleKeyMap}";
   system.stateVersion = "23.11"; # Do not change!
 }

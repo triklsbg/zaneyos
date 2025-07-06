@@ -50,17 +50,18 @@
         source $HOME/.zshrc-personal
       fi
     '';
-
-    shellAliases = {
-      sv = "sudo nvim";
-      v = "nvim";
-      c = "clear";
-      fr = "nh os switch --hostname ${profile}";
-      fu = "nh os switch --hostname ${profile} --update";
-      zuuuu = "sh <(curl -L https://gitlab.com/Zaney/zaneyos/-/releases/latest/download/install-zaneyos.sh)";
-      ncguu = "nix-collect-garbage --delete-old && sudo nix-collect-garbage -d && sudo /run/current-system/bin/switch-to-configuration boot";
-      # cat = "bat";
-      man = "batman";
-    };
+#   for aliases exclusve in zsh
+#   think about aliases in home-manager, resp system-wide
+    # shellAliases = {
+    #   sv = "sudo nvim";
+    #   v = "nvim";
+    #   c = "clear";
+    #   fr = "nh os switch --hostname ${profile}";
+    #   fu = "nh os switch --hostname ${profile} --update";
+    #   zuuuu = "sh <(curl -L https://gitlab.com/Zaney/zaneyos/-/releases/latest/download/install-zaneyos.sh)";
+    #   ncguu = "nix-collect-garbage --delete-old && sudo nix-collect-garbage -d && sudo /run/current-system/bin/switch-to-configuration boot";
+    #   # cat = "bat";
+    #   man = "batman";
+    # };
   };
 }
