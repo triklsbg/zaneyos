@@ -37,5 +37,14 @@ in
       # Optionally, you may need to select the appropriate driver version for your specific GPU.
       package = config.boot.kernelPackages.nvidiaPackages.stable;
     };
+
+    services.xserver.xkb.extraLayouts = {
+      gb-trikl = {
+        description = "Englisch mit Umlauten a,u,o ";
+        languages = [ "eng" ];
+        symbolsFile = ../../xkb/gb-trikl.xkb;
+      };
+    };
+
   };
 }
