@@ -3,7 +3,7 @@
   username,
   ...
 }: {
-  programs.nh = {
+  programs.nh = {     # nix helper utility
     enable = true;
     clean = {
       enable = true;
