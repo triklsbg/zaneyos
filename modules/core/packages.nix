@@ -78,6 +78,8 @@
     fd
     # ytmdl # Tool For Downloading Audio From YouTube
     fish
-    wev     # like xev shows keyboard aka mouse events
+    wev             # like xev shows keyboard aka mouse events
+    xorg.xkbutils        # deal with keyboard layouts
+    xorg.xkbcomp
   ];
 }
