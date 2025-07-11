@@ -16,7 +16,8 @@
             on-timeout = "hyprlock";
           }
           {
-            timeout = 12000;  # was 1200
+            # strom sparen nach 1200 sekunden
+            timeout = 1200; # was 1200
             on-timeout = "hyprctl dispatch dpms off";
             on-resume = "hyprctl dispatch dpms on";
           }
