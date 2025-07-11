@@ -1,0 +1,146 @@
+;; -*- mode: emacs-lisp; eval: (progn (pp-buffer) (indent-buffer)) -*-
+((def-persp nil nil
+            (def-wconf
+             (((min-height . 4) (min-width . 10) (min-height-ignore . 3)
+               (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2)
+               (min-pixel-height . 116) (min-pixel-width . 140)
+               (min-pixel-height-ignore . 87) (min-pixel-width-ignore . 56)
+               (min-pixel-height-safe . 29) (min-pixel-width-safe . 28))
+              leaf (pixel-width . 1836) (pixel-height . 2001)
+              (total-width . 131) (total-height . 69) (normal-height . 1.0)
+              (normal-width . 1.0)
+              (parameters
+               (better-jumper-struct
+                . #s(better-jumper-jump-list-struct
+                     (0 0
+                        . [nil nil nil nil nil nil nil nil nil nil nil nil nil
+                               nil nil nil nil nil nil nil nil nil nil nil nil
+                               nil nil nil nil nil nil nil nil nil nil nil nil
+                               nil nil nil nil nil nil nil nil nil nil nil nil
+                               nil nil nil nil nil nil nil nil nil nil nil nil
+                               nil nil nil nil nil nil nil nil nil nil nil nil
+                               nil nil nil nil nil nil nil nil nil nil nil nil
+                               nil nil nil nil nil nil nil nil nil nil nil nil
+                               nil nil nil])
+                     -1)))
+              (buffer "*scratch*" (selected . t) (hscroll . 0)
+                      (fringes 8 8 nil nil) (margins nil)
+                      (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0)
+                      (dedicated) (point . 1) (start . 1))
+              (prev-buffers ("*doom*" 1 1555) ("*scratch*" 1 1)
+                            ("home.nix" 1033 1886))))
+            (def-params
+             ((last-project-root . "/home/tom1/nixos-config/")
+              (eshell-buffers 0 0
+                              . [nil nil nil nil nil nil nil nil nil nil nil nil
+                                     nil nil nil nil nil nil nil nil nil nil nil
+                                     nil nil])))
+            t nil t)
+ (def-persp "nixos-config"
+            ((def-buffer "configuration.nix"
+                         "/home/tom1/nixos-config/configuration.nix" nix-mode)
+             (def-buffer "home.nix"
+                         "/home/tom1/nixos-config/exxtra/config/home-manager/home.nix"
+                         nix-mode))
+            (def-wconf
+             (((min-height . 4) (min-width . 10) (min-height-ignore . 3)
+               (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2)
+               (min-pixel-height . 116) (min-pixel-width . 140)
+               (min-pixel-height-ignore . 87) (min-pixel-width-ignore . 56)
+               (min-pixel-height-safe . 29) (min-pixel-width-safe . 28))
+              leaf (pixel-width . 1836) (pixel-height . 2001)
+              (total-width . 131) (total-height . 69) (normal-height . 1.0)
+              (normal-width . 1.0)
+              (parameters
+               (better-jumper-struct
+                . #s(better-jumper-jump-list-struct
+                     (0 8
+                        . [("/home/tom1/nixos-config/configuration.nix" 1
+                            "27gu7d")
+                           ("/home/tom1/nixos-config/configuration.nix" 287
+                            "yxbeuq")
+                           ("/home/tom1/nixos-config/configuration.nix" 356
+                            "dtoxd1")
+                           ("/home/tom1/nixos-config/configuration.nix" 287
+                            "dx6oro")
+                           ("/home/tom1/nixos-config/configuration.nix" 321
+                            "ax3oo9")
+                           ("/home/tom1/nixos-config/configuration.nix" 350
+                            "hvu2nf")
+                           ("/home/tom1/nixos-config/configuration.nix" 3925
+                            "asnbzr")
+                           ("/home/tom1/nixos-config/exxtra/config/home-manager/home.nix"
+                            4040 "ip99qg")
+                           nil nil nil nil nil nil nil nil nil nil nil nil nil
+                           nil nil nil nil nil nil nil nil nil nil nil nil nil
+                           nil nil nil nil nil nil nil nil nil nil nil nil nil
+                           nil nil nil nil nil nil nil nil nil nil nil nil nil
+                           nil nil nil nil nil nil nil nil nil nil nil nil nil
+                           nil nil nil nil nil nil nil nil nil nil nil nil nil
+                           nil nil nil nil nil nil nil nil nil nil nil nil nil
+                           nil])
+                     -1)))
+              (buffer "home.nix" (selected . t) (hscroll . 0)
+                      (fringes 8 8 t nil) (margins nil)
+                      (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0)
+                      (dedicated) (point . 1886) (start . 370))
+              (prev-buffers ("configuration.nix" 3932 4799) ("*doom*" 1 1540)
+                            ("*scratch*" 1 1))))
+            (def-params ((last-project-root))) nil nil nil)
+ (def-persp "tom1/nixos-config"
+            ((def-buffer "us_de_diff.xkb"
+                         "/home/tom1/nixos-config/symbols/us_de_diff.xkb"
+                         fundamental-mode)
+             (def-buffer "us_de.xkb" "/home/tom1/nixos-config/symbols/us_de.xkb"
+                         fundamental-mode)
+             (def-buffer "configuration.nix"
+                         "/home/tom1/nixos-config/configuration.nix" nix-mode))
+            (def-wconf
+             (((min-height . 4) (min-width . 10) (min-height-ignore . 3)
+               (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2)
+               (min-pixel-height . 116) (min-pixel-width . 140)
+               (min-pixel-height-ignore . 87) (min-pixel-width-ignore . 56)
+               (min-pixel-height-safe . 29) (min-pixel-width-safe . 28))
+              leaf (pixel-width . 1836) (pixel-height . 2001)
+              (total-width . 131) (total-height . 69) (normal-height . 1.0)
+              (normal-width . 1.0)
+              (parameters
+               (better-jumper-struct
+                . #s(better-jumper-jump-list-struct
+                     (0 9
+                        . [("/home/tom1/nixos-config/configuration.nix" 4799
+                            "uagszf")
+                           ("/home/tom1/nixos-config/symbols/us_de" 1 "ibtn7u")
+                           ("/home/tom1/nixos-config/symbols/us_de_diff.xkb" 1
+                            "c3ft4c")
+                           ("/home/tom1/nixos-config/configuration.nix" 5336
+                            "pttyo9")
+                           ("/home/tom1/nixos-config/symbols/us_de_diff.xkb" 3
+                            "ouczxh")
+                           ("/home/tom1/nixos-config/symbols/us_de_diff.xkb" 2
+                            "swr62c")
+                           ("/home/tom1/nixos-config/symbols/us_de_diff.xkb" 51
+                            "reum4t")
+                           ("/home/tom1/nixos-config/symbols/us_de.xkb" 264
+                            "w7qcoc")
+                           ("/home/tom1/nixos-config/symbols/us_de.xkb" 34
+                            "b0qt00")
+                           nil nil nil nil nil nil nil nil nil nil nil nil nil
+                           nil nil nil nil nil nil nil nil nil nil nil nil nil
+                           nil nil nil nil nil nil nil nil nil nil nil nil nil
+                           nil nil nil nil nil nil nil nil nil nil nil nil nil
+                           nil nil nil nil nil nil nil nil nil nil nil nil nil
+                           nil nil nil nil nil nil nil nil nil nil nil nil nil
+                           nil nil nil nil nil nil nil nil nil nil nil nil nil])
+                     -1)))
+              (buffer "us_de.xkb" (selected . t) (hscroll . 0)
+                      (fringes 8 8 t nil) (margins nil)
+                      (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0)
+                      (dedicated) (point . 43) (start . 1))
+              (prev-buffers ("us_de_diff.xkb" 1 103) ("us_de.xkb" 1 345)
+                            ("configuration.nix" 4688 5189) ("*doom*" 1 1540)
+                            ("*scratch*" 1 1) ("home.nix" 1033 1886))))
+            (def-params
+             ((+workspace-project . "/home/tom1/nixos-config/")
+              (last-project-root . "/home/tom1/nixos-config/")))
+            nil nil nil))

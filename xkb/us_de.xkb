@@ -1,0 +1,16 @@
+// # -*- mode: xkb; -*-
+//
+//
+//
+// creates a file ...us_de.xkb in the nix store
+// 'localectl list-x11-keymap-layouts' shows us_de as an alternative like other languages
+
+partial default alphanumeric_keys
+xkb_symbols "us_de" {
+    include "us"
+    include "us_de_diff"
+    name[Group1]="en_US";
+    key <RALT>  { type[Group1]="TWO_LEVEL",
+                  [ ISO_Level3_Shift, Multi_key ]   };
+    modifier_map Mod5   { <RALT> };
+};

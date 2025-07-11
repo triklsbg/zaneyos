@@ -14,7 +14,7 @@ in
     ./eza.nix
     ./fastfetch
     ./fzf.nix
-    ./gh.nix
+    # ./gh.nix    # gh doesn't like HM or nix to control his files
     # ./ghostty.nix
     ./git.nix
     ./gtk.nix
