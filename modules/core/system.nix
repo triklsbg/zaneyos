@@ -36,7 +36,7 @@ in
     # list all installed packages
     nixpkgs_me = "nix-store --query --requisites /run/current-system | cut -d- -f2- | sort | uniq ";
     # trikl: touches all shells ...
-    all = "alias | rg ";     # search for a pattern in all aliases
+    all = "alias | rg "; # search for a pattern in all aliases
     #
     ll = "ls -l";
     la = "ls -a";
@@ -54,8 +54,9 @@ in
     rem_zsh_keybinds = "bindkey -L ";
     rem_bash_keybinds = "bind -p";
     #
-    rem_zel = "zellij action new-tab --cwd ~/projects/my-project";
+    rem_zell = "zellij action new-tab --cwd ~/projects/my-project";
     rem_zel2 = "zellij action new-tab --command /bin/zsh";
+    rem_nixfmt = "find . -type f -name '*.nix' -exec nixfmt {} ";
   };
 
   # services.xserver.xkb.extraLayouts = {

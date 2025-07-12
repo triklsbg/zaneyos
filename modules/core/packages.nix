@@ -82,5 +82,6 @@
     xorg.xkbutils        # deal with keyboard layouts
     xorg.xkbcomp
     zellij          # terminal multiplexer
+    gh              # former installed by enabling in HM
   ];
 }
