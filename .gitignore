@@ -1,7 +1,6 @@
-flake.lok
 xkb/autosave
 xkb/us-greek.xkb
 xkb/us_de
 xkb/us_de.xkb
 xkb/us_de_diff.xkb
-flake.lock
+./flake.lock
