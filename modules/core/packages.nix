@@ -13,9 +13,10 @@
     fuse.userAllowOther = true;
     mtr.enable = true;
     adb.enable = true;
+    ssh.startAgent = true;
     gnupg.agent = {
       enable = true;
-      enableSSHSupport = true;
+      # enableSSHSupport = true;
       pinentryPackage = pkgs.pinentry-qt; # trikl
     };
   };
