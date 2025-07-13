@@ -2,8 +2,10 @@
   pkgs,
   username,
   ...
-}: {
-  programs.nh = {     # nix helper utility
+}:
+{
+  programs.nh = {
+    # nix helper utility
     enable = true;
     clean = {
       enable = true;

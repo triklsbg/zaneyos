@@ -3,7 +3,8 @@
   pkgs,
   lib,
   ...
-}: {
+}:
+{
   imports = [
     ./zshrc-personal.nix
   ];
@@ -13,7 +14,14 @@
     autosuggestion.enable = true;
     syntaxHighlighting = {
       enable = true;
-      highlighters = ["main" "brackets" "pattern" "regexp" "root" "line"];
+      highlighters = [
+        "main"
+        "brackets"
+        "pattern"
+        "regexp"
+        "root"
+        "line"
+      ];
     };
     historySubstringSearch.enable = true;
 
@@ -50,8 +58,8 @@
         source $HOME/.zshrc-personal
       fi
     '';
-#   for aliases exclusve in zsh
-#   think about aliases in home-manager, resp system-wide
+    #   for aliases exclusve in zsh
+    #   think about aliases in home-manager, resp system-wide
     # shellAliases = {
     #   sv = "sudo nvim";
     #   v = "nvim";

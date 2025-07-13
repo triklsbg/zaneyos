@@ -20,7 +20,7 @@
   browser = "google-chrome-stable"; # Set Default Browser (google-chrome-stable for google-chrome)
   # terminal = "ghostty"; # Set Default System Terminal
   terminal = "kitty"; # Set Default System Terminal
-  keyboardLayout = "gb-trikl";     # gb
+  keyboardLayout = "gb-trikl"; # gb
   consoleKeyMap = "uk";
 
   # For Nvidia Prime support

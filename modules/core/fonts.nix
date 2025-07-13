@@ -10,7 +10,7 @@
       material-icons
       fira-code
       fira-code-symbols
-      nerd-fonts.jetbrains-mono   # trikl
+      nerd-fonts.jetbrains-mono # trikl
     ];
   };
 }

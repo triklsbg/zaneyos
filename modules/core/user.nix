@@ -38,7 +38,7 @@ in
     isNormalUser = true;
     description = "${gitUsername}";
     group = "gtom";
-    uid   = 1010;
+    uid = 1010;
     extraGroups = [
       "adbusers"
       "docker"

@@ -64,7 +64,7 @@ in
   };
 
   home.sessionPath = [
-    "$HOME/.config/emacs/bin"    # to find doom executable
+    "$HOME/.config/emacs/bin" # to find doom executable
   ];
 
   home.shellAliases = {

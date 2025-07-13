@@ -78,10 +78,10 @@
     fd
     # ytmdl # Tool For Downloading Audio From YouTube
     fish
-    wev             # like xev shows keyboard aka mouse events
-    xorg.xkbutils        # deal with keyboard layouts
+    wev # like xev shows keyboard aka mouse events
+    xorg.xkbutils # deal with keyboard layouts
     xorg.xkbcomp
-    zellij          # terminal multiplexer
-    gh              # former installed by enabling in HM
+    zellij # terminal multiplexer
+    gh # former installed by enabling in HM
   ];
 }
