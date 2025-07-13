@@ -1,6 +1,6 @@
-{host, ...}: let
-  inherit
-    (import ../../hosts/${host}/variables.nix)
+{ host, ... }:
+let
+  inherit (import ../../hosts/${host}/variables.nix)
     alacrittyEnable
     ghosttyEnable
     tmuxEnable
@@ -9,7 +9,8 @@
     vscodeEnable
     helixEnable
     ;
-in {
+in
+{
   imports =
     [
       ./amfora.nix
@@ -51,34 +52,10 @@ in {
       ./zoxide.nix
       ./zsh
     ]
-    ++ (
-      if helixEnable
-      then [./evil-helix.nix]
-      else []
-    )
-    ++ (
-      if vscodeEnable
-      then [./vscode.nix]
-      else []
-    )
-    ++ (
-      if weztermEnable
-      then [./wezterm.nix]
-      else []
-    )
-    ++ (
-      if ghosttyEnable
-      then [./ghostty.nix]
-      else []
-    )
-    ++ (
-      if tmuxEnable
-      then [./tmux.nix]
-      else []
-    )
-    ++ (
-      if alacrittyEnable
-      then [./alacritty.nix]
-      else []
-    );
+    ++ (if helixEnable then [ ./evil-helix.nix ] else [ ])
+    ++ (if vscodeEnable then [ ./vscode.nix ] else [ ])
+    ++ (if weztermEnable then [ ./wezterm.nix ] else [ ])
+    ++ (if ghosttyEnable then [ ./ghostty.nix ] else [ ])
+    ++ (if tmuxEnable then [ ./tmux.nix ] else [ ])
+    ++ (if alacrittyEnable then [ ./alacritty.nix ] else [ ]);
 }

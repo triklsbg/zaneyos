@@ -3,10 +3,12 @@
   config,
   lib,
   ...
-}: let
+}:
+let
   accent = "#${config.lib.stylix.colors.base0D}";
   background-alt = "#${config.lib.stylix.colors.base01}";
-in {
+in
+{
   programs.starship = {
     enable = false;
     settings = {
@@ -21,7 +23,9 @@ in {
         "\n"
         "$character"
       ];
-      directory = {style = accent;};
+      directory = {
+        style = accent;
+      };
 
       character = {
         success_symbol = "[❯](${accent})";
