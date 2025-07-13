@@ -25,7 +25,7 @@
         #
         "GDK_DPI_SCALE,0.5"
         "QT_SCALE_FACTOR,1"
-        "EDITOR,nvim"
+        "EDITOR,emacs"
         # Setting terminal to kitty so running kitty from rofi
         # won't launch in xterm. Which is horrible
         # You can change this to your preferred terminal
