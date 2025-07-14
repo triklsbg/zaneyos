@@ -10,6 +10,7 @@
     ./nfs.nix
     ./nh.nix
     ./fish.nix
+    ./zsh.nix
     ./packages.nix
     ./printing.nix
     ./security.nix
