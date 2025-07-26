@@ -80,9 +80,11 @@
     # ytmdl # Tool For Downloading Audio From YouTube
     fish
     wev # like xev shows keyboard aka mouse events
-    xorg.xkbutils # deal with keyboard layouts
-    xorg.xkbcomp
+    # xorg.xkbutils # deal with keyboard layouts
+    # xorg.xkbcomp
+    libxkbcommon  # trikl up to date xkb tools for wayland
     zellij # terminal multiplexer
-    gh # former installed by enabling in HM
+    tmux
+    gh # github cli tool
   ];
 }

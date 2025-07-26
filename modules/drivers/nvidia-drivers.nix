@@ -40,7 +40,7 @@ in
 
     services.xserver.xkb.extraLayouts = {
       gb-trikl = {
-        description = "Englisch mit Umlauten a,u,o ";
+        description = "Englisch mit Umlauten a,u,o auf li Alt-Taste";
         languages = [ "eng" ];
         symbolsFile = ../../xkb/gb-trikl.xkb;
       };

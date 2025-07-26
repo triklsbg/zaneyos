@@ -1,4 +1,9 @@
 {
+  # central definition of variables which are accessed/included by
+  # a statement like:
+  # 'inherit (import ../../hosts/${host}/variables.nix) consoleKeyMap;'
+  # in some nix files of the config file tree
+  #
   # Git Configuration ( For Pulling Software Repos )
   gitUsername = "Th. Rikl";
   gitEmail = "workhorse.t@googlemail.com";
@@ -21,6 +26,9 @@
   # terminal = "ghostty"; # Set Default System Terminal
   terminal = "kitty"; # Set Default System Terminal
   keyboardLayout = "gb-trikl"; # gb
+  # ends up in the 'kb_layout = ' option in hyprland config
+  # valid is also a comma separated list like "us,gb,jp"
+  # or whatever you find with '$xkbcli list' "
   consoleKeyMap = "uk";
 
   # For Nvidia Prime support

@@ -21,4 +21,18 @@
       pulse.enable = true;
     };
   };
+  services.locate = {
+    enable = true;
+    prunePaths = [
+      "/nix/var/log/nix"
+      "/vbox/github/nixpkgs"
+      "/pp/ff9_nixos"
+      # allow /pp/ff4 to be indexed
+    ];
+    pruneNames = [
+      ".jj"
+      ".git"
+      ".cache"
+    ];
+  };
 }

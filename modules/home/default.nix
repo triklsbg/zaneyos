@@ -28,7 +28,7 @@ in
     ./scripts
     ./starship.nix
     ./stylix.nix
-    ./swappy.nix
+    ./swappy.nix         #
     ./swaync.nix
     ./virtmanager.nix
     # ./vscode.nix

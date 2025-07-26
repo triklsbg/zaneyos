@@ -68,9 +68,13 @@ in
 
       input = {
         kb_layout = "${keyboardLayout}";
+        # valid is also a comma separated list like "us,gb,jp"
         kb_options = [
-          "grp:alt_caps_toggle"
-          "caps:super"
+          "grp:alt_caps_toggle" # switch between layouts for different languages
+          #
+          # "caps:super" # trikl: make caps key(66) act like super key(133)
+          "caps:super" # in an xkb option found in 'xkbcli list'
+          # "caps:hyper"
         ];
         numlock_by_default = true;
         repeat_delay = 300;
@@ -97,6 +101,7 @@ in
 
       general = {
         "$modifier" = "SUPER"; # START-Key of Logitech MX, maybe caps is super too
+        # "$modifier" = "CAPS"; # CAPS acts now as HYPER with caps:hyper see above
         layout = "dwindle";
         gaps_in = 6;
         gaps_out = 8;

@@ -2,6 +2,6 @@
 {
   programs.starship = {
     enable = false;
-    package = pkgs.starship;
+    package = pkgs.starship;  # trikl??? TODO unneccesary nonsense
   };
 }
