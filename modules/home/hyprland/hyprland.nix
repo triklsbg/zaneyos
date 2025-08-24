@@ -74,7 +74,8 @@ in
           #
           # "caps:super" # trikl: make caps key(66) act like super key(133)
           "caps:super" # in an xkb option found in 'xkbcli list'
-          # "caps:hyper"
+          # "caps:none"    # caps is detected as key: 66, caps-letter gives the letter
+          # "caps:hyper"     # accessed as CTRL_ALT_SHIFT_META
         ];
         numlock_by_default = true;
         repeat_delay = 300;
@@ -100,6 +101,7 @@ in
       };
 
       general = {
+        # "$modifier" = "CTRL_ALT_SHIFT_META"; # START-Key of Logitech MX, maybe caps is super too
         "$modifier" = "SUPER"; # START-Key of Logitech MX, maybe caps is super too
         # "$modifier" = "CAPS"; # CAPS acts now as HYPER with caps:hyper see above
         layout = "dwindle";

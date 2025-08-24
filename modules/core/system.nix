@@ -47,6 +47,7 @@ in
     gif = "git diff";
     rghl = "rg --hidden --follow ";
     rghu = "rg --hidden --no-ignore --follow ";
+    rgab = "rg --hidden --no-ignore --follow --before-context=2 --after-context=2 ";
     maintain_alias = " in ..core/system.nix ";
     #
     # rem_xxx to remember things
