@@ -5,10 +5,10 @@ in
 {
   programs.git = {
     enable = true;
-    userName = "${gitUsername}";
-    userEmail = "${gitEmail}";
 
-    extraConfig = {
+    settings = {
+      user.name = "${gitUsername}";
+      user.email = "${gitEmail}";
       # FOSS-friendly settings
       push.default = "simple"; # Match modern push behavior
       credential.helper = "cache --timeout=7200";
@@ -19,7 +19,7 @@ in
       merge.conflictStyle = "diff3";
     };
     # Optional: FOSS-friendly Git aliases
-    aliases = {
+    settings.alias = {
       br = "branch --sort=-committerdate";
       co = "checkout";
       df = "diff";

@@ -20,6 +20,9 @@
       tab_bar_style = "powerline";
       #tab_bar_style = "fade";
       enabled_layouts = "splits";
+      opacity = 0.85 ;  # *trikl*
+
+
     };
     extraConfig = ''
 

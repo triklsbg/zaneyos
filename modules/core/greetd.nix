@@ -6,7 +6,7 @@
 {
   services.greetd = {
     enable = true;
-    vt = 3;
+    # vt = 3;
     # autologin doesn't work like wiki entry trikl
     # settings = rec {
       #   initial_session = {
@@ -22,7 +22,7 @@
 
           default_session = {
             user = username;
-            command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd Hyprland"; # start Hyprland with a TUI login manager
+            command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd Hyprland"; # start Hyprland with a TUI login manager
           };
         };
   };

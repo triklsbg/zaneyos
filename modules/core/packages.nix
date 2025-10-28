@@ -5,7 +5,7 @@
       enable = true;
       defaultEditor = true;
     };
-    firefox.enable = true; # Firefox is not installed by default
+    # firefox.enable = true; # Firefox is not installed by default
     dconf.enable = true;
     seahorse.enable = true;
     hyprland.enable = true; # create desktop file and depedencies if you switch to GUI login MGR
@@ -13,7 +13,7 @@
     fuse.userAllowOther = true;
     mtr.enable = true;
     adb.enable = true;
-    ssh.startAgent = true;
+    # ssh.startAgent = true;   # *trikl*
     gnupg.agent = {
       enable = true;
       # enableSSHSupport = true;
@@ -44,7 +44,7 @@
     gimp # Great Photo Editor
     glxinfo # Needed for inxi -G GPU info
     gping # graphical ping
-    greetd.tuigreet # The Login Manager (Sometimes Referred To As Display Manager)
+    tuigreet # The Login Manager (Sometimes Referred To As Display Manager)
     htop # Simple Terminal Based System Monitor
     hyprpicker # Color Picker
     eog # For Image Viewing

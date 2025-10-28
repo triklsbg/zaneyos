@@ -2,7 +2,7 @@
 
 {
   boot = {
-    kernelPackages = pkgs.linuxPackages_zen;
+    # kernelPackages = pkgs.linuxPackages_zen;  # *trikl*
     kernelModules = [ "v4l2loopback" ];
     extraModulePackages = [ config.boot.kernelPackages.v4l2loopback ];
     kernel.sysctl = {
@@ -17,6 +17,7 @@
     loader.efi.efiSysMountPoint = "/efi";
 
     loader.efi.canTouchEfiVariables = false; # was true
+    
     # Appimage Support
     # binfmt.registrations.appimage = {
     #   wrapInterpreterInShell = false;

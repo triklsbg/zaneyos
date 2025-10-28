@@ -8,7 +8,7 @@
     extraPackages = with pkgs.bat-extras; [
       batman
       batpipe
-      batgrep
+      # batgrep  # TODO disabled because compile error
     ];
   };
 }
