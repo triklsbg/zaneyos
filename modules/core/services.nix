@@ -3,12 +3,12 @@
   # Services to start
   services = {
     libinput.enable = true; # Input Handling
-    fstrim.enable = true; # SSD Optimizer
+    # fstrim.enable = true; # SSD Optimizer
     gvfs.enable = true; # For Mounting USB & More
     openssh.enable = true; # Enable SSH
-    blueman.enable = true; # Bluetooth Support
+    # blueman.enable = true; # Bluetooth Support
     tumbler.enable = true; # Image/video preview
-    gnome.gnome-keyring.enable = true;
+    # gnome.gnome-keyring.enable = true;
 
     smartd = {
       enable = if profile == "vm" then false else true;

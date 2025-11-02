@@ -13,7 +13,7 @@
     fuse.userAllowOther = true;
     mtr.enable = true;
     adb.enable = true;
-    # ssh.startAgent = true;   # *trikl*
+    ssh.startAgent = true;   # *trikl*
     gnupg.agent = {
       enable = true;
       # enableSSHSupport = true;
@@ -42,7 +42,8 @@
     gdu # TUI disk usage, like ncdu written in go
     # gedit # Simple Graphical Text Editor
     gimp # Great Photo Editor
-    glxinfo # Needed for inxi -G GPU info
+    # glxinfo # Needed for inxi -G GPU info
+    mesa-demos     # *trikl*
     gping # graphical ping
     tuigreet # The Login Manager (Sometimes Referred To As Display Manager)
     htop # Simple Terminal Based System Monitor

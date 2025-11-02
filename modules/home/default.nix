@@ -22,7 +22,7 @@ in
     ./hyprland
     ./kitty.nix
     ./lazygit.nix
-    ./nvf.nix # neovim things
+    # ./nvf.nix # neovim things   # *trikl*
     ./rofi
     ./qt.nix
     ./scripts
