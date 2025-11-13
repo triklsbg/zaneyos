@@ -15,7 +15,7 @@ in
     useUserPackages = true;
     # useGlobalPkgs = false;
     useGlobalPkgs = true;
-    backupFileExtension = "backup";
+    backupFileExtension = "hm-backup";
     extraSpecialArgs = {
       inherit
         inputs
@@ -51,7 +51,15 @@ in
     shell = pkgs.zsh;
     ignoreShellProgramCheck = true;
   };
-  # Define a user account. Don't forget to set a password with ‘passwd’.
+  nix.settings.allowed-users = [ "${username}" ];
+  #
+
+  # create groups with <name> and <guid>
+  users.groups = {
+    "gtom".gid = 1020;
+    "gtest".gid = 1030;
+  };
+  # Define additional user accounts. Don't forget to set a password with ‘passwd’.
   users.users.jane = {
     isNormalUser = true;
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
@@ -60,11 +68,7 @@ in
     isNormalUser = true;
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
   };
-
-  # create groups with <name> and <guid>
-  users.groups."gtom".gid = 1020;
-  users.groups."gtest".gid = 1030;
-
+  
   users.users.tomtom1 = {
     # shell = pkgs.bash;
     shell = pkgs.zsh;
@@ -75,5 +79,4 @@ in
     ignoreShellProgramCheck = true;
   };
 
-  nix.settings.allowed-users = [ "${username}" ];
 }

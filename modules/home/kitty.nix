@@ -25,7 +25,9 @@
 
     };
     extraConfig = ''
-
+      #
+      # fullscreen is "$modifier F" declared in  hyprland/binds.nix 
+      #
       # Clipboard
       map ctrl+shift+v        paste_from_selection
       map shift+insert        paste_from_selection

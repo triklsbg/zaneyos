@@ -64,13 +64,14 @@ in
   };
 
   home.sessionPath = [
-    "$HOME/.config/emacs/bin" # to find doom executable
+    "$HOME/.config/emacs/bin" # to find doom executable within $PATH
   ];
 
   home.shellAliases = {
     sv = "sudo nvim";
     v = "nvim";
     c = "clear";
+    fdhi = "fd --hidden --no-ignore --follow ";  # *trikl* find and follow links
     fr = "nh os switch --hostname ${profile}";
     fu = "nh os switch --hostname ${profile} --update";
     zuuuu = "sh <(curl -L https://gitlab.com/Zaney/zaneyos/-/releases/latest/download/install-zaneyos.sh)";

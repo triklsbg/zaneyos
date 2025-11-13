@@ -89,6 +89,10 @@ in
         };
       };
 
+      debug = {                 # *trikl*
+        disable_logs = false;
+      };
+      
       gestures = {
         # workspace_swipe = 1;  # *trikl* option obsolete or renamed
         # workspace_swipe_fingers = 3;

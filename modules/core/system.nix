@@ -1,4 +1,4 @@
-{ host, ... }:
+{ host, profile,  ... }:
 let
   inherit (import ../../hosts/${host}/variables.nix) consoleKeyMap;
 in
@@ -33,6 +33,9 @@ in
     ZANEYOS = "true";
   };
   environment.shellAliases = {
+    #
+    maintain_aliases = " in ..core/system.nix ";
+    #
     # list all installed packages
     nixpkgs_me = "nix-store --query --requisites /run/current-system | cut -d- -f2- | sort | uniq ";
     # trikl: touches all shells ...
@@ -48,7 +51,7 @@ in
     rghl = "rg --hidden --follow ";
     rghu = "rg --hidden --no-ignore --follow ";
     rgab = "rg --hidden --no-ignore --follow --before-context=2 --after-context=2 ";
-    maintain_alias = " in ..core/system.nix ";
+    fdhi = "fd --hidden --no-ignore --follow ";
     #
     # rem_xxx to remember things
     rem_fish_keybinds = "bind ";
@@ -58,6 +61,12 @@ in
     rem_zell = "zellij action new-tab --cwd ~/projects/my-project";
     rem_zel2 = "zellij action new-tab --command /bin/zsh";
     rem_nixfmt = "find . -type f -name '*.nix' -exec nixfmt {} ";
+    #
+    # zaney-provided ...
+    fr = "nh os switch --hostname ${profile}";
+    fu = "nh os switch --hostname ${profile} --update";
+    # zuuuu = "sh <(curl -L https://gitlab.com/Zaney/zaneyos/-/releases/latest/download/install-zaneyos.sh)";
+    # ncguu = "nix-collect-garbage --delete-old && sudo nix-collect-garbage -d && sudo /run/current-system/bin/switch-to-configuration boot";
   };
 
   # services.xserver.xkb.extraLayouts = {
